@@ -15,7 +15,7 @@ export const MainLayout = ({ children }) => {
       <SecondaryNavbar />
 
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

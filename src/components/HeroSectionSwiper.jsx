@@ -38,10 +38,16 @@ export const HeroSectionSwiper = () => {
   };
 
   return (
-    <Box maxW="100%" overflow="hidden" px="10px" pb="40px" mt="20px">
+    <Box
+      maxW="100%"
+      overflow="hidden"
+      px={{ base: "5px", lg: "10px" }}
+      pb="40px"
+      mt={{ base: "10px", lg: "20px" }}
+    >
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <Box key={index} w="100%" px="10px">
+          <Box key={index} w="100%" px={{ base: "5px", lg: "10px" }}>
             <Image src={slide} w="100%" h="auto" objectFit="cover" />
           </Box>
         ))}
